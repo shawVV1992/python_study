@@ -32,7 +32,12 @@ print(t_array[mask])
 print(np.where(random_array > 0.5))
 print(t_array[np.where(random_array > 0.5)])
 
-# dnarray 的数据类型
+# ndarray 的数据类型
 t_array = np.array([1, 2, 3, 4, 5], dtype=np.float32)
 print(t_array.dtype)
 print(t_array.nbytes)
+
+t_array=np.array([1,2.1,'str',False])
+print(t_array)
+t_array=np.asarray(t_array,dtype=np.object0)
+print(t_array[:2].astype(np.float32))
